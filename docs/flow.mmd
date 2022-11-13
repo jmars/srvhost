@@ -1,0 +1,5 @@
+graph TD
+    A[Browser] <==>|login.example.com| B[SrvHost]
+    B -->|SRV _login._tcp.datacenter1.example.com| C[1.1.1.1]
+    C -->|1 1 8888 auth.example.com| B
+    B <==>D[auth.example.com:8888]

@@ -1,0 +1,18 @@
+{
+  "version": "1.0.69",
+  "name": "srvgate",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.18.0",
+    "bun-types": "latest",
+    "wrangler": "^2.2.1"
+  },
+  "dependencies": {
+    "hono": "^2.2.5",
+    "zod": "^3.19.1"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "module": "src/index.js"
+}
